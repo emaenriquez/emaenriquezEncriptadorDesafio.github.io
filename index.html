@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <title>Encriptador Alura Challenge</title>
+</head>
+
+<body>
+    <header>
+        <picture class="logo-alura">
+            <a href="https://www.aluracursos.com/"><img src="./images/Logo.png" alt="logo de Alura"></a>
+        </picture>
+    </header>
+
+    <main>
+        <div class="contenedor-principal">
+
+            <div class="caja-encriptador">
+
+                <textarea class="area-encriptar" name="" id="encrypt-area" placeholder="Ingrese el texto aquí"></textarea>
+
+                <div class="caja-botones">
+
+                    <p class="advertencia"><img src="./images/advertencia.png" alt="" class="imagen-advertencia">  Solo letras minúsculas y sin acento</p>
+                    <button class="boton-encriptar" id="encrypt-button">Encriptar</button>
+                    <button class="boton" id="decrypt-button">Desencriptar</button>
+
+                </div>
+            </div>
+
+            <div class="caja-desencriptar">
+                <textarea class="area-desencriptar" name="" id="decrypt-area" readonly="true"></textarea>
+                
+                <div id="doll-container" class="contenedor-muneco">
+                    <img src="./images/muneco.png" alt="">
+                </div>
+
+                <div id="message-not-found" class="mensaje-no-encontrado">
+                    <p class="mensaje-no-encontrado-superior"> <b>Ningún mensaje fue <br> encontrado</b> </p> 
+                    <p class="mensaje-no-encontrado-inferior">Ingresa el texto que deseas <br> encriptar o desencriptar</p>
+                </div>
+                
+                <div class="caja-botones-inferior" id="lower-button-box">
+                    <button id="copy-button" class="boton">Copiar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
